@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -14,10 +12,40 @@ body {
 }
 
 .circle {
-  max-width: 450px;
-  max-height: 450px;
+  width: 450px;
+  height: 450px;
   background-image: linear-gradient(to bottom, #fa39ad, #fe6c4c);
-  filter: blur(180px);
-  opacity: 0.5;
+  filter: blur(120px);
+  opacity: .5;
 }
 
+.title{
+  background-image: linear-gradient(to right, #fa39ad, #fe6c4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.shadow-gradient {
+  background-image: linear-gradient(to bottom, #fe6c4c, #fa39ad);
+  filter: blur(15px);
+  z-index: -1;
+}
+
+/* .blur-out-expand:hover {
+  animation: blur-out-expand 0.5s linear both;
+}
+@keyframes blur-out-expand {
+  0% {
+    transform: scale(1);
+    filter: blur(0.01px);
+  }
+  50% {
+    transform: scale(1.2);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+} */
