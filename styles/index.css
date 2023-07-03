@@ -11,6 +11,22 @@ body {
   background-color: #f3f3ff;
 }
 
+body::-webkit-scrollbar{
+  width: 12px;  
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  border: 2px solid #f3f3ff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .circle {
   width: 450px;
   height: 450px;
