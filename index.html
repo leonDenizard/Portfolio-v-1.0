@@ -66,19 +66,19 @@
                 <section class="mt-18 relative max-w-full">
                     <h2 class="text-2xl text-zinc-900 font-semibold text-center uppercase lg:text-3xl lg:text-zinc-800">Stacks</h2>
                     <div class="relative top-6 flex flex-wrap justify-center gap-3">
-                        <div class="title rounded-md flex justify-center bg-zinc-300 relative">
+                        <div class="title rounded-md flex justify-center bg-zinc-300 relative portfolio cursor-pointer">
                             <i class='bx bxl-javascript text-8xl' style='color:#333533' ></i>
                         </div>
-                        <div class="title rounded-md flex justify-center bg-zinc-300 relative">
+                        <div class="title rounded-md flex justify-center bg-zinc-300 relative portfolio cursor-pointer">
                             <i class='bx bxl-html5 text-8xl' style='color:#333533' ></i>
                         </div>
-                        <div class="title rounded-md flex justify-center bg-zinc-300 relative">
+                        <div class="title rounded-md flex justify-center bg-zinc-300 relative portfolio cursor-pointer">
                             <i class='bx bxl-css3 text-8xl' style='color:#333533' ></i>
                         </div>
-                        <div class="title rounded-md flex justify-center bg-zinc-300 relative">
+                        <div class="title rounded-md flex justify-center bg-zinc-300 relative portfolio cursor-pointer">
                             <i class='bx bxl-tailwind-css text-8xl' style='color:#333533' ></i>
                         </div>
-                        <div class="title rounded-md flex justify-center bg-zinc-300 relative">
+                        <div class="title rounded-md flex justify-center bg-zinc-300 relative portfolio cursor-pointer">
                             <i class='bx bxl-github text-8xl' style='color:#333533' ></i>
                         </div>
                     </div>
@@ -155,6 +155,19 @@
                 </footer>
             </div>
         </main>
-        
+        <script type="text/javascript" src="./src/tilt.js"></script>
+        <script>
+            function initTilt() {
+                VanillaTilt.init(document.querySelectorAll(".portfolio"), {
+                    max: 20,
+                    glare: true,
+                    "max-glare": 0.6,
+
+                });
+
+            }
+
+            initTilt()
+        </script>
     </body>
 </html>
